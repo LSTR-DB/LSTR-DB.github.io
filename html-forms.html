@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LSTR. WebDev</title>
+	<link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+	<link href="html-style.css" rel="stylesheet">
+	<link href="html-style2.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<ul class="top">
+			<li class="ft">
+				<a class="active1" href="#home">HTML <i class="fab fa-html5" style="font-size: 1em;"></i></a>
+			</li>
+			<li class="ft1">
+				<a href="css-howto.html">CSS <i class="fab fa-css3-alt" style="font-size: 1em;"></i></a>
+			</li>
+		</ul>
+	</div>
+	<div onclick="Expand()" class="open"><span>_</span><br><span>_</span><br><span>_</span></div>
+	<div class="area">
+		<div class="cnt pts">
+	 		&nbsp;Formulaire
+			<span class="bal1 df1">&nbsp;Inline&nbsp;</span>
+			<span class="bal2 df2">&nbsp;block&nbsp;</span>
+			<div class="b-inline">&nbsp;</div><div class="b-block">&nbsp;</div>
+		</div>
+		<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">form</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Conteneur de formulaire</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bl">
+					<span>target | novalidate | name | method | enctype | autocomplete | action | accept-charset | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+		<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">input</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">types: bouton, case à cocher, couleur, date, datetimelocal, email, fichier, caché, image, mois, numéro, mot de passe, radio, range, reset, rechercher, soumettre, tél, texte, heure, url, semaine</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>width | value | tabindex | step | src | spellcheck | size | selectionStart | selectionEnd | selection- Direction | required | readonly | placeholder | pattern | name | multiple | minlength | maxlength | min | max | list | inputmode | height | formtarget | formnovalidate | formmethod | formenctype | formaction | form | disabled | checked | capture | autofocus | autocomplete | accept | type | g.attr</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+		<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">textarea</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Editer du texte en multi-ligne</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>wrap | spellcheck | required | readonly | placeholder | name | minlength | maxlength | form | disabled | rows | cols | autofocus | autocomplete | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+		<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">select</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Menu d'options</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>size | required | name | multiple | form | disabled | autofocus | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+		<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">optgroup</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Groupe d'options dans un élément &lsaquo;select&rsaquo;</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>label | disabled | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">datalist</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Éléments représentant les valeurs disponibles pour les autres contrôles &lsaquo;select&rsaquo;</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>label | disabled | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">option</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Contenu dans &lsaquo;select&rsaquo;, &lsaquo;optgroup&rsaquo;, &lsaquo;datalist&rsaquo;</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>value | selected | label | disabled | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">legend</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Légende du contenu de son parent &lsaquo;fieldset&rsaquo;</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">label</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Légende d'un élément dans une interface utilisateur</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>for | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">fieldset</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Grouper plusieurs contrôles</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bl">
+					<span>name | form | disabled | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cnt">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">output</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Résultat d'un calcul ou d'une action de l'utilisateur</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>name | form | for | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="cntb">
+		<table>
+			<tr>
+				<td>
+					<span class="tag"><span>&lsaquo;</span><span class="re">button</span><span>&rsaquo;</span></span><br>
+					<span class="gr def">Bouton cliquable</span>
+				</td>
+			    <th rowspan="2" class="be attr bor_bg">
+					<span>value | type | name | formtarget | formnovalidate | formmethod | formenctype | formaction | name | form | disabled | autofocus | g.attr.</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	</div>
+		<nav class="main-menu" id="show">
+			<ul style="padding-top: 0.5em; padding-bottom: 1.5em;">
+				<button onclick="Retract()" class="close">x</button>
+				<hr class="H1">
+				<li>
+					<a href="html-howto.html"><i class="fab fa-html5 fo"></i> <span class="nav-text">How To</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li class="has-subnav">
+					<a href="html-head.html"><i class="fas fa-window-maximize fa"></i> <span class="nav-text">Head</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-sections.html"><i class="fas fa-bolt fa"></i> <span class="nav-text">Sections</span>
+					<div id="triangle-right"></div></a>
+				</li>
+
+				<li>
+					<a href="html-texte.html"><i class="fas fa-align-left fa"></i> <span class="nav-text">Texte</span>
+					<div id="triangle-right"></div></a>
+				</li>
+
+				<li>
+					<a href="html-citation.html"><i class="far fa-comment fa"></i> <span class="nav-text">Citations</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-liste.html"><i class="fas fa-list-ul fa"></i> <span class="nav-text">Listes</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-miseEnFormeTextuelle.html"><i class="far fa-pen fa"></i> <span class="nav-text">Mise en forme textuelle</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-code.html"><i class="fas fa-terminal fa"></i> <span class="nav-text">Code & message système</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li class="has-subnav">
+					<a href="html-autofermante.html"><i class="fas fa-code fa"></i> <span class="nav-text">Auto-fermante</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-data.html"><i class="fab fa-phabricator fo"></i> <span class="nav-text">Data</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li class="has-subnav">
+					<a href="html-forms.html"><i class="far fa-clipboard fa active"></i> <span class="nav-text">Formulaire</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li class="has-subnav">
+					<a href="html-media.html"><i class="far fa-image fa"></i> <span class="nav-text">Media</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li class="has-subnav">
+					<a href="html-tabs.html"><i class="fas fa-table fa"></i> <span class="nav-text">Tableaux</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-divers.html"><i class="fas fa-wrench fa"></i> <span class="nav-text">Divers</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<hr class="H2">
+				<li class="has-subnav">
+					<a href="html-light.html"><i class="fas fa-lightbulb fa"></i> <span class="nav-text">Éclairages</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-gradient.html"><i class="fas fa-brush fa"></i> <span class="nav-text">Dégradés</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-font.html"><i class="fas fa-font fa"></i> <span class="nav-text">Polices</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-shape.html"><i class="fab fa-telegram-plane fo"></i> <span class="nav-text">Formes</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li>
+					<a href="html-container.html"><i class="fas fa-th-large fa"></i> <span class="nav-text">Conteneurs</span>
+					<div id="triangle-right"></div></a>
+				</li>
+				<li class="has-subnav">
+					<a href="html-animation.html"><i class="fas fa-route fa"></i> <span class="nav-text">Animations</span>
+					<div id="triangle-right"></div></a>
+				</li>
+			</ul>
+		</nav>
+		<script src='https://code.jquery.com/jquery-3.3.1.min.js'>
+		</script> 
+		<script src="index.js">
+		</script> 
+	</div>
+</body>
+</html>

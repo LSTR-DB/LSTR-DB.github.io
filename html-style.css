@@ -1,0 +1,1316 @@
+﻿/*------------------------------------------------------------------------------------------------------------------------------PCs / All others-----------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color:#1a1a1a;
+}
+
+.open {
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    display: none;
+    border: none;
+    font-size: 4em;
+    top: 0.7em;
+    left: -0.15em;
+    line-height: 0.2em;
+    color: darkgrey;
+}
+
+.close {
+    position: absolute;
+    background-color: rgba(50,50,50,1);
+    color: orange;
+    display: none;
+    border: none;
+    font-size: 2em;
+    top: 0.4em;
+    left: 85.5vw;
+    font-family: Arial;
+    border-radius: 0.5em;
+    height: 1em;
+    width: 1em;
+    line-height: 0;
+    padding-bottom: 0.1em;
+}
+
+.ST {
+    position: absolute;
+    color: grey;
+    font-size: 2em;
+    z-index: 500;
+    top: 2em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Titillium Web';
+    left: 3em;
+}
+
+@media screen and (max-height: 680px) {
+
+.main-menu:hover,nav.main-menu.expanded {
+    -ms-overflow-style: none;
+    width:250px;
+    overflow:visible;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+}
+
+/*---------------------TopNav----------------------*/
+
+.header {
+    position: fixed;
+    background:blue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5em;
+    z-index: 2000;
+}
+
+ul.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212121;
+    height: 3.5em;
+    font-family: 'Titillium Web';
+    border-bottom: 2px solid black;
+}
+
+.ft {
+    float: left;
+    width: 50%;
+    height: 3.5em;
+}
+
+.ft a {
+    display: block;
+    text-align: center;
+    padding: 0.1em;
+    text-decoration: none;
+    height: 3.5em;
+    vertical-align: middle;
+    color: orange;
+    font-size: 2em;
+}
+
+.ft a:hover {
+    background-color: black;
+    color: orange;
+}
+
+.ft1 {
+    float: left;
+    width: 50%;
+    height: 3.5em;
+}
+
+.ft1 a {
+    display: block;
+    text-align: center;
+    padding: 0.1em;
+    text-decoration: none;
+    height: 3.5em;
+    vertical-align: middle;
+    color: black;
+    font-size: 2em;
+    color: white;
+}
+
+.ft1 a:hover {
+    background-color: black;
+    color: CornflowerBlue;
+}
+
+
+.active1 {
+    background-color: black;
+    color: black;
+}
+
+.open {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+/* -----------------------------------SideNav------------------------------- */
+
+.main-menu,nav.main-menu.expanded {
+    width:250px;
+}
+
+@media screen and (max-height: 680px) {
+
+.main-menu,nav.main-menu.expanded {
+    -ms-overflow-style: none;
+    width:250px;
+    overflow:visible;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+}
+
+.main-menu:hover::-webkit-scrollbar { width: 0 !important }
+nav.main-menu.expanded::-webkit-scrollbar { width: 0 !important }
+
+.main-menu {
+    background:rgba(0,0,0,1);
+    position:fixed;
+    top:3.5em;
+    bottom:0;
+    height:auto;
+    left:0;
+    width:250px;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+    overflow: hidden;
+}
+.main-menu>ul {
+    margin: 0px 0;
+}
+
+.main-menu li {
+    position:relative;
+    display:block;
+    width:260px;
+    left: 0;
+    height: 1.7em;
+}
+
+.main-menu li>a {
+    position:relative;
+    display:table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color:#999;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration:none;
+}
+
+.main-menu .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:50px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:15px;
+}
+
+.main-menu .nav-text {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu:hover .nav-text {
+    color: #999;
+}
+
+.main-menu li:hover .nav-text {
+    color: white;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+}
+
+a:hover,a:focus {
+    text-decoration:none;
+}
+
+nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+    color:#fff;
+    background: orange;
+}
+
+/* -----------------------------------SideNav icons------------------------------- */
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:17px;
+}
+
+.fo {
+    width: 60px;
+    height: 30px;
+    font-size:17px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+}
+
+.active {
+    color: orange;
+}
+
+li:hover .active {
+    color: black;
+}
+
+.H2 {
+    border: none;
+    border-top: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    font-size: 0.9em; 
+    font-family: 'Titillium Web';
+    width: 90%
+    opacity: 0.5;
+    background-color:rgba(255, 255, 255, 0);
+    margin-top: 1.5em;
+}
+
+.H2:after {
+    background: #fff;
+    content: 'S.V.G.';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    background-color:rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.H1 {
+    border: none;
+    border-top: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    font-size: 0.9em; 
+    font-family: 'Titillium Web';
+    width: 90%
+    opacity: 0.5;
+    background-color:rgba(255, 255, 255, 0);
+    margin-top: 1.5em;
+}
+
+.H1:after {
+    background: #fff;
+    content: 'HTML';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    background-color:rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*---------------------Container size on PC----------------------*/
+
+.cnt {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 70%;
+    background-color: rgb(50,50,50);
+    display: block;
+    color: white;
+    left: 7em;
+    
+}
+
+.cntb {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 70%;
+    background-color: rgb(50,50,50);
+    display: block;
+    margin-bottom: 3em;
+    color: white;
+    left: 7em;
+}
+
+.pts {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 70%;
+    background-color: rgb(50,50,50);
+    display: block;
+    color: white;
+    left: 7em;
+}
+
+.area {
+    width: 95%;
+    font-family: 'Titillium Web';
+    position: absolute;
+    top: 3.5em;
+    left: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.schema {
+    width: 95%;
+    font-family: 'Titillium Web';
+    position: absolute;
+    top: 3.5em;
+    left: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.ht {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 92%;
+    height: 100%;
+    margin-right: 1em;
+    color: white;
+    overflow: hidden;
+    height: 37em;
+}
+
+.gr {
+    color: #70716F;
+}
+
+.ge {
+    color: #7A8F52;
+}
+
+.be {
+    color:#D1CC6E;
+}
+
+.re {
+    color:#D62C60;
+}
+
+.bor_bl {
+    border-right: 0.5em solid lightblue;
+}
+
+.bor_bg {
+    border-right: 0.5em solid  rgb(147,194,72);
+}
+
+.bor_bp {
+    border-right: 0.5em solid  #FF1493;
+}
+
+.tag {
+    font-size: 2em;
+    font-weight: 1000;
+}
+
+.def {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.attr {
+    padding: 1em;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+code {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 1.1em;
+    font-style: normal;
+}
+
+.T1 {
+    color:orange;
+    font-size: 3em;
+    padding: 0 0.5em;
+    width: 30%;
+}
+.T2 {
+    color:orange;
+    font-size: 3em;
+    padding: 0 0.5em;
+    width: 90%;
+}
+
+.V1 {
+    background-color: lightblue;
+    color: rgba(0,0,0,0.1);
+    text-align: right;
+    font-family: Impact;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0 1em;
+    letter-spacing: 0;
+}
+
+.V2 {
+    background-color: rgb(147,194,72);
+    color: rgba(0,0,0,0.1);
+    text-align: right;
+    font-family: Impact;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 0.5em 2em;
+    letter-spacing: 0.3em;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+.V3 {
+    background-color: rgb(115,201,219);
+    color: rgba(0,0,0,0.1);
+    text-align: right;
+    font-family: Impact;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 0em 1em 0em 3.6em;
+    letter-spacing: 0.3em;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+td {
+    width: 50%;
+    padding: 1em;
+    line-height: 2em;
+}
+th {
+    text-align: right;
+    width: 50%;
+}
+table {
+    width:100%;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+.im1 {
+    position: relative;
+    display: flex;
+    padding: 0 auto;
+    margin: 0 auto;
+    left: 100px;
+    width: 30em;
+    top: 8em;
+}
+
+.pts {
+    font-size: 3em;
+    color: DarkGrey;
+    left: 2.34em;
+    word-spacing: 0.5em;
+    margin-top: 0.55em;
+}
+
+.pts2 {
+    font-size: 3em;
+    color: DarkGrey;
+    left: 2.34em;
+    word-spacing: 0.5em;
+    margin-top: 0.55em;
+}
+
+.bl-in {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.2em solid lightblue;
+}
+
+.bl-tab {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.2em solid #FF1493;
+}
+
+.bl-blo {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.2em solid rgb(147,194,72);
+}
+
+.b-inline {
+    float: right;
+    top: 0;
+    width: 0.2em;
+    background-color: lightblue;
+    height: 0.7em;
+}
+
+.b-block {
+    float: right;
+    margin-top: 0.8em;
+    background-color: rgb(147,194,72);
+    height: 0.7em;
+    width: 0.2em;
+    margin-right: -0.2em;
+}
+
+.bal1 {
+    float: right;
+    color: #ff1493;
+    font-size: 0.4em;
+    margin-right: 0.5em;
+}
+
+.bal2 {
+    float: right;
+    color: grey;
+    font-size: 0.4em;
+    margin-right: 0.5em;
+}
+
+.df1 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: lightblue;
+}
+
+.df2 {
+    margin-top: 2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: rgb(147,194,72);
+}
+
+.df3 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: rgb(147,194,72);
+}
+
+.df4 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: #ff1493;
+}
+
+/*---------------------------------------------------------------------------------------------------------------Tablets--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (max-width: 1024px) {
+  
+.open {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.main-menu:hover,nav.main-menu.expanded {
+    width:250px;
+}
+
+@media screen and (max-height: 680px) {
+
+.main-menu:hover,nav.main-menu.expanded {
+    -ms-overflow-style: none;
+    width:250px;
+    overflow:visible;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+}
+
+.main-menu:hover::-webkit-scrollbar { width: 0 !important }
+nav.main-menu.expanded::-webkit-scrollbar { width: 0 !important }
+
+.main-menu {
+    background:rgba(0,0,0,1);
+    position:fixed;
+    top:3.5em;
+    bottom:0;
+    height:auto;
+    left:0;
+    width:60px;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+    overflow: hidden;
+}
+.main-menu>ul {
+    margin: 0px 0;
+}
+
+.main-menu li {
+    position:relative;
+    display:block;
+    width:260px;
+    left: 0;
+    height: 1.7em;
+}
+
+.main-menu li>a {
+    position:relative;
+    display:table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color:#999;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration:none;
+}
+
+.main-menu .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:50px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:15px;
+}
+
+.main-menu .nav-text {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu:hover .nav-text {
+    color: #999;
+}
+
+.main-menu li:hover .nav-text {
+    color: white;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+}
+
+a:hover,a:focus {
+    text-decoration:none;
+}
+
+nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+    color:#fff;
+    background: orange;
+}
+
+.cnt {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 80%;
+    background-color: rgb(50,50,50);
+    display: block;
+    color: white;
+    left: 0.6em;
+}
+.cntb {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 80%;
+    background-color: rgb(50,50,50);
+    display: block;
+    margin-bottom: 3em;
+    color: white;
+    left: 0.6em;
+}
+
+.pts {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 80%;
+    background-color: rgb(50,50,50);
+    display: block;
+    color: DarkGrey;
+    left: 0.6em;
+}
+
+.gr {
+    color: #70716F;
+}
+
+.ge {
+    color: #7A8F52;
+}
+
+.be {
+    color:#D1CC6E;
+}
+
+.re {
+    color:#D62C60;
+}
+
+.bor_bl {
+    border-right: 0.5em solid lightblue;
+}
+
+.bor_bg {
+    border-right: 0.5em solid  rgb(147,194,72);
+}
+
+.bor_bp {
+    border-right: 0.5em solid  #FF1493;
+}
+
+.tag {
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
+.def {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+.attr {
+    padding: 0.7em;
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 1.1em;
+    font-style: normal;
+}
+
+.T1 {
+    color:orange;
+    font-size: 2em;
+    padding: 0 0.5em;
+    width: 30%;
+}
+.T2 {
+    color:orange;
+    font-size: 2em;
+    padding: 0 0.5em;
+    width: 90%;
+}
+.V1 {
+    background-color: lightblue;
+    color: rgba(0,0,0,0.1);
+    text-align: right;
+    font-family: Impact;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0 1em;
+    letter-spacing: 0;
+}
+.V2 {
+    background-color: rgb(147,194,72);
+    color: rgba(0,0,0,0.1);
+    text-align: right;
+    font-family: Impact;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 0.5em 2em;
+    letter-spacing: 0.3em;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+.V3 {
+    background-color: rgb(115,201,219);
+    color: rgba(0,0,0,0.1);
+    text-align: right;
+    font-family: Impact;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 0em 1em 0em 3.6em;
+    letter-spacing: 0.3em;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+td {
+    width: 50%;
+    padding: 0.7em;
+    line-height: 1.5em;
+}
+th {
+    text-align: right;
+    width: 50%;
+}
+table {
+    width:100%;
+}
+
+.im1 {
+    top: 10em;
+    left: 25px;
+    width: 25em;
+}
+
+.ST {
+    left: 1em;
+}
+
+.pts {
+    font-size: 3em;
+    color: DarkGrey;
+    left: 0.2em;
+    word-spacing: 0.5em;
+    margin-top: 0.55em;
+}
+
+.pts2 {
+    font-size: 3em;
+    color: DarkGrey;
+    left: 0.2em;
+    word-spacing: 0.5em;
+    margin-top: 0.55em;
+}
+
+.bl-in {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.17em solid lightblue;
+}
+
+.bl-tab {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.2em solid #FF1493;
+}
+
+.bl-blo {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.17em solid rgb(147,194,72);
+}
+
+.b-inline {
+    float: right;
+    top: 0;
+    width: 0.17em;
+    background-color: lightblue;
+    height: 0.7em;
+}
+
+.b-block {
+    float: right;
+    margin-top: 0.8em;
+    background-color: rgb(147,194,72);
+    height: 0.7em;
+    width: 0.17em;
+    margin-right: -0.17em;
+}
+
+.bal1 {
+    float: right;
+    color: grey;
+    font-size: 0.4em;
+    margin-right: 0.5em;
+}
+
+.bal2 {
+    float: right;
+    color: grey;
+    font-size: 0.4em;
+    margin-right: 0.5em;
+}
+
+.df1 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: lightblue;
+}
+
+.df2 {
+    margin-top: 2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: rgb(147,194,72);
+}
+
+.df3 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: rgb(147,194,72);
+}
+
+.df4 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: #FF1493;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------Mobiles--------------------------------------------------------------------------------------------------------------------------------------*/
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media screen and (max-width: 480px) {
+
+body {
+    overflow-x: hidden;
+}
+.open {
+    display: block;
+    z-index: 1000;
+    padding: 0em 0.5em 1em 0.5em;
+    margin: 0;
+}
+
+.close {
+    display: block;
+    z-index: 1000;
+}
+
+.main-menu,nav.main-menu.expanded {
+    width:250px;
+}
+
+@media screen and (max-height: 680px) {
+
+.main-menu,nav.main-menu.expanded {
+    -ms-overflow-style: none;
+    width:250px;
+    overflow:visible;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+}
+
+.main-menu:hover::-webkit-scrollbar { width: 0 !important }
+nav.main-menu.expanded::-webkit-scrollbar { width: 0 !important }
+
+.main-menu {
+    background:rgba(0,0,0,1);
+    position:fixed;
+    top:3.5em;
+    bottom:0;
+    height:auto;
+    left:0;
+    width:0%;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+    overflow: hidden;
+}
+.main-menu>ul {
+    margin: 0px 0;
+}
+
+.main-menu li {
+    position:relative;
+    display:block;
+    width:260px;
+    left: 0;
+    height: 1.7em;
+}
+
+.main-menu li>a {
+    position:relative;
+    display:table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color:#999;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration:none;
+}
+
+.main-menu .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:50px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:15px;
+}
+
+.main-menu .nav-text {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu:hover .nav-text {
+    color: #999;
+}
+
+.main-menu li:hover .nav-text {
+    color: white;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+}
+
+a:hover,a:focus {
+    text-decoration:none;
+}
+
+nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+    color:#fff;
+    background: orange;
+    width: 479px;
+}
+
+.cnt {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 103%;
+    background-color: rgb(50,50,50);
+    display: block;
+    color: white;
+    left: -1.7em;
+}
+.cntb {
+    position: relative;
+    margin: 5px auto;
+    padding: 0 auto;
+    width: 103%;
+    background-color: rgb(50,50,50);
+    display: block;
+    margin-bottom: -2.8em;
+    color: white;
+    left: -1.7em;
+}
+
+.pts {
+    font-size: 2em;
+    color: DarkGrey;
+    left: -0.85em;
+    word-spacing: 2em;
+    margin-top: -0.85em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.pts2 {
+    font-size: 1.3em;
+    color: DarkGrey;
+    left: -1.3em;
+    word-spacing: 20vw;
+    margin-top: -1.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bl-in {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.24em solid lightblue;
+}
+
+.bl-tab {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.2em solid #FF1493;
+}
+
+.bl-blo {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 0.24em solid rgb(147,194,72);
+}
+
+.b-inline {
+    float: right;
+    width: 0.24em;
+    background-color: lightblue;
+    height: 0.68em;
+}
+
+.b-block {
+    float: right;
+    background-color: rgb(147,194,72);
+    height: 0.68em;
+    width: 0.24em;
+    margin-right: -0.24em;
+}
+
+.im1 {
+    top: 13em;
+    left: 5px;
+    width: 19em;
+}
+
+.ST {
+    font-size: 7vw;
+    top: 2.3em;
+    width: 75%;
+    left: 2.7em;
+}
+
+.bal1 {
+    float: right;
+    color: grey;
+    font-size: 0.4em;
+    margin-right: 0.5em;
+}
+
+.bal2 {
+    float: right;
+    color: grey;
+    font-size: 0.4em;
+    margin-right: 0.5em;
+}
+
+.df1 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: lightblue;
+}
+
+.df2 {
+    margin-top: 2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: rgb(147,194,72);
+}
+
+.df3 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: rgb(147,194,72);
+}
+
+.df4 {
+    margin-top: 0.2em;
+    right: 0em;
+    position: absolute;
+    word-spacing: 0.2em;
+    color: #FF1493;
+}
+
+.bor_bp {
+    border-right: 0.5em solid  #FF1493;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+
+.ST {
+    top: 3.3em;
+    left: 2.9em;
+}
+}
